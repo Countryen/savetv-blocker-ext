@@ -8,6 +8,9 @@ var localizer = new C0Localizer();
 document.addEventListener('DOMContentLoaded', function() {
   var optionsButton = document.getElementById("options");
   optionsButton.addEventListener("click", click_options);
+  
+  //see also: https://medium.com/@xpl/hot-reloading-for-chrome-extensions-3da296916286
+  //document.getElementById("reload").addEventListener("click", () => chrome.runtime.reload());
 
   localizer.localizeHTML(document);
 });

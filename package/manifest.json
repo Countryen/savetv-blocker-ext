@@ -4,7 +4,7 @@
   "name": "__MSG_GENERAL_Extension_Name__",
   "description": "__MSG_GENERAL_Extension_Description__",
   "author": "Pascal Ried (C0)",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "default_locale": "de",
 
   "browser_action": {

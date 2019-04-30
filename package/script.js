@@ -9,7 +9,7 @@ var localizer = new C0Localizer();
 
 /// Structure of the site / the list of entries (html).
 /// Will be used as a container for each entry.
-/// "Genres"
+/// "Genres/Highlights"
 function SAVETV() {
 
     this.META = {

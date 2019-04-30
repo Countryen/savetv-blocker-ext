@@ -28,8 +28,9 @@ function createContextMenuButtons() {
         "targetUrlPatterns": [
 			// Logged Out:
             "*://www.save.tv/STV/S/obj/TC/SendungsDetails.cfm*",
-			// Logged In:
-			"*://www.save.tv/STV/M/obj/archive/VideoArchiveDetails.cfm*"
+            // Logged In:
+            "*://www.save.tv/STV/M/obj/TC/SendungsDetails.cfm*",
+            "*://www.save.tv/STV/M/obj/archive/VideoArchiveDetails.cfm*"
         ],
         "onclick": function(info, tab) {
             chrome.tabs.sendMessage(tab.id, {
@@ -62,5 +63,3 @@ storage.getOneAsync("old_entries_1", function(items) {
 document.writeln("This is the background site of the Save.TV Blocker Extension (by Countryen (C0)).");
 document.writeln("It's script (background.js) is only used to display this message and to create the extra context-menu-button to hide/add entries.");
 document.writeln("It is loaded when you browse on www.save.tv");
-
-
