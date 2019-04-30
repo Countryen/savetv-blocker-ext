@@ -1,0 +1,28 @@
+1. STORAGE-Save-File Schema #1, 3rd October 2017:
+{
+  "meta": {
+    "entryCount": N,
+    "saveDateUTC": S(new Date().toUTCString()),
+    "version": N
+  },
+  "entries": [
+    {
+      "subtitle": S,
+      "target": S(URL when clicked),
+      "title": S,
+      "url": S(URL where saved)
+    },
+	...
+  ]
+}
+
+2. Uses SEMVER Semantic Versioning 2.0.0 (http://www.semver.org)
+
+3. Test-Data shows, that it can handle up to approximate 20000 entries (2.5MB) in a very short time (4th November, 2017)
+
+4. References:
+Why permission "activeTab": https://developer.chrome.com/extensions/activeTab
+All permissions (+"tabs"): https://developer.chrome.com/apps/declare_permissions
+Optional permissions (better): https://developer.chrome.com/apps/permissions
+Manifest File Format: https://developer.chrome.com/apps/manifest
+

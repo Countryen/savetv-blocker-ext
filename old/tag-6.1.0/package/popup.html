@@ -1,0 +1,26 @@
+<!doctype html>
+<!--
+ C0 Save.TV Blocker - Copyright (c) 2017 Countryen
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Save.TV Blocker Popup</title>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="C0Localizer.js"></script>
+    <script src="C0Logger.js"></script>
+    <script src="C0Storage.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <button id="options" data-l10n-id="POPUP_OptionsButton_TextContent">{{To the options}}</button>
+  </body>
+</html>
+

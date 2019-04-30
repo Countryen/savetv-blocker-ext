@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+   C0 Save.TV Blocker - Copyright (c) 2017 Countryen
+   Page to define the user settings and manage saved entries.
+   This page is shown when the extension option-page is loaded.
+   See "options_ui" in manifest.json.
+   Show it by going to chrome://extensions and click on the "options" next
+   to the extension. Or use chrome.runtime.openOptionsPage.
+ -->
+<html>
+<head>
+  <title>Save.TV Blocker Options</title>
+  <style>
+
+    body {
+      min-width: 600px;
+      background-color: whitesmoke;
+    }
+
+    h1 { font-size: 1.5em; }
+    h2 { font-size: 1.25em; }
+    h3 { font-size: 1.125em; }
+
+    .container {
+      margin-bottom: 10px;
+      background-color: white;
+      padding: 0.1em 1em;
+      border-radius: 10px;
+    }
+
+    .last-container {
+      margin-bottom: 0em;
+    }
+
+    .actions {
+      text-align: center;
+      background-color: whitesmoke;
+      padding: 1em;
+    }
+
+    .actions button {
+      width: 30%;
+    }
+    
+    .conditional-actions {
+      text-align: center;
+      background-color: silver;
+      padding: 0.5em;
+    }
+
+    .conditional-actions button {
+      width: 50%;
+    }
+
+    #list {
+      /* avoid an excessively wide status text */
+      white-space: pre;
+      text-overflow: ellipsis;
+      overflow: auto;
+      max-height: 150px;
+      border: 1px solid black;
+    }
+
+    #list li:hover {
+      font-weight: bold;
+    }
+
+    #notify {
+      padding: 0.25em;
+      text-align: center;
+    }
+
+    #manage-entry-title { 
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="entries" class="container">
+    <h1><span id="list-info" data-l10n-id="OPTIONS_ListInfo_TextContent">{{Titles, which are currently hidden at www.save.tv:}}</span>
+      <b id="counter"></b> (<b id="size"></b> <span id="type"></span>)
+    </h1>
+    <ul id="list">
+      <!-- filled by js -->
+    </ul>
+  </div>
+
+  <div id="manage-entry" class="container">
+    <h1 data-l10n-id="OPTIONS_ManageEntry_TextContent">{{Manage selected entry}}</h1>
+    <span data-l10n-id="OPTIONS_ManageEntryTitleLabel_TextContent">{{Title:}}</span> <span id="manage-entry-title"> <!-- filled by js --></span>
+    
+    <div class="actions">
+      <button id="delete" data-l10n-id="OPTIONS_DeleteButton_TextContent">{{Delete}}</button>
+      <button id="details" disabled data-l10n-id="OPTIONS_DetailsButton_TextContent">{{Show Details}}</button>
+    </div>
+    <div id="entry-actions" class="conditional-actions"> <!-- filled by js --> </div>
+  </div>
+
+  <div id="manage-entries" class="container">
+    <h1 data-l10n-id="OPTIONS_ManageAllEntries_TextContent">{{Manage all saved/hidden entries}}</h1>
+    <!-- Safety Button -->
+    <div>
+      <label for="clear-allowed" id="clear-allowed-label" data-l10n-id="OPTIONS_ClearAllowedLabel_TextContent">{{Allow function "Clear":}}</label> 
+      <input type="checkbox" name="clear-allowed" id="clear-allowed">
+    </div>
+    <div class="actions">
+      <button id="clear" disabled data-l10n-id="OPTIONS_ClearButton_TextContent">{{Clear}}</button>
+      <button id="save" data-l10n-id="OPTIONS_SaveButton_TextContent">{{Save...}}</button>
+      <button id="load" data-l10n-id="OPTIONS_LoadButton_TextContent">{{Load...}}</button>
+    </div>
+    <div id="entries-actions" class="conditional-actions"> <!-- filled by js --> </div>
+  </div>
+
+  <div class="container last-container">
+    <p id="notify"> <!-- filled by js --> </p>
+  </div>
+
+  <script src="C0Localizer.js"></script>
+  <script src="C0Logger.js"></script>
+  <script src="C0Storage.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

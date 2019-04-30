@@ -1,0 +1,39 @@
+﻿v6.1.0 - Fix, Logged in
+- Fixed the "matches" of the main context-menu-item that it shows up when logged out and now also when logged in.
+
+v6.0.0 - Refactored, better release
+- Rework of the options page -> Allows now to edit the list directly (remove 1 entry)
+- Changed the logic, where the context-menu-item is shown (and where not) (still needs changes, though)
+- Changed the name of the extension to "Save.TV Blocker"
+- Added localization-features (chrome.i18n, locales) and support for German (currently only German)
+- Changed the save-file format, shouldn't harm anyone.
+
+v5.1.1 - Fix subtitle "Programmübersicht"
+- Fixed a bug where when a element is saved from the "Programmübersicht" the subtitle in the database was not correct
+(it was the time not the subtitle)
+
+v5.1.0 - "Programmübersicht" and subtitle not showing
+- Changed it so that for the "Programmübersicht" only the title is shown (instead of title + subtitle)
+
+v5.0.0 - "Programmübersicht"
+- Added the same functionalities for the "Genres"-Site to the "Programmübersicht".
+- Both use the same list of saved titles.
+
+v4.1.0 - Oops
+- Removed the "test-button" that wasn't supposed to be published.
+
+v4.0.0 - Settings-Page and Save-File Feature
+- Added a Settings-Page
+- Added an option to save the current list of titles (download them)
+- Added an option to load a previously saved list of titles into the extension
+- Changed the extension icon at the top to just "got to the settings page"
+
+v3.0.0 - Fixes
+- I forgot some english text
+- Changed the manifest description some
+
+v2.0.0 - German only
+- Changed all text to German
+- Changed name of the extension
+
+v1.0.0 - Initial Version

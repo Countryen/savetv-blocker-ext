@@ -1,0 +1,14 @@
+- IDEA: DETAILS-Button (options-page)
+- IDEA: Add "WHEN ADDED" to the entry-data.
+- IDEA: EN support
+- IDEA: Screen-shots (store)
+- IDEA: Help-functions (?i?)
+- IDEA: Documentation + Let users know that it works logged in / logged out.
+- IDEA: GitHub
+
+- PROBLEM: Matches for the context-menu-item (not all "entries" are supported yet)
+
+- Publish when done (v7?)
+- Refactoring still needed
+
+- REQUEST (FR): Options -> Let the user know "You have to click on ... to ..." (not a help-function)

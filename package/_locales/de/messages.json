@@ -1,0 +1,74 @@
+{
+    "GENERAL_Extension_Name": {
+        "description": "Name of the extension (manifest.json).",
+        "message": "Save.TV Blocker"
+     },
+     "GENERAL_Extension_Description": {
+        "description": "Description of the extension (manifest.json).",
+        "message": "Kleine Hilfe für www.save.tv. Versteckt unerwünschte Einträge (Serien, Filme, etc.) für eine bessere Übersicht."
+     },
+    "GENERAL_ContextMenuMainItem_Title": {
+       "description": "Title of the context-menu main item (to hide all the titles).",
+       "message": "Save.TV Blocker - Diesen Titel verstecken"
+    },
+    "POPUP_OptionsButton_TextContent": {
+        "description": "The button to go to the options page.",
+        "message": "Zu den Optionen"
+     },
+     "OPTIONS_LoadButton_TextContent": {
+        "description": "TextContent of the button to (up)load a file of saved entries.",
+        "message": "Laden"
+     },
+     "OPTIONS_SaveButton_TextContent": {
+        "description": "TextContent of the button to save/download the list of (saved) entries.",
+        "message": "Speichern"
+     },
+     "OPTIONS_ClearButton_TextContent": {
+        "description": "TextContent of the button to clear the list of saved entries.",
+        "message": "Leeren"
+     },
+     "OPTIONS_LoadReadButton_TextContent": {
+        "description": "TextContent of the button to 'read' the loaded file.",
+        "message": "Datei jetzt einlesen"
+     },
+     "OPTIONS_DeleteButton_TextContent": {
+        "description": "TextContent of the button to delete the selected entry from the list.",
+        "message": "Eintrag löschen"
+     },
+     "OPTIONS_DetailsButton_TextContent": {
+        "description": "TextContent of the button to show details of the selected entry.",
+        "message": "Details anzeigen"
+     },
+     "OPTIONS_DownloadLink_TextContent": {
+        "description": "TextContent of the link (a) to download the save-file.",
+        "message": "Jetzt herunterladen"
+     },
+     "OPTIONS_ListInfo_TextContent": {
+        "description": "TextContent of the info/header above the list of saved entries.",
+        "message": "Titel, welche derzeit auf www.save.tv versteckt werden:"
+     },
+     "OPTIONS_ManageEntry_TextContent": {
+        "description": "TextContent of the info/header above the actions for the selected entry.",
+        "message": "Ausgewählten Eintrag verwalten:"
+     },
+     "OPTIONS_ManageEntryTitleLabel_TextContent": {
+        "description": "TextContent of the label for the display of the title for the selected entry.",
+        "message": "Titel:"
+     },
+     "OPTIONS_ManageAllEntries_TextContent": {
+        "description": "TextContent of the info/header above the actions for all entries.",
+        "message": "Alle Einträge verwalten:"
+     },     
+     "OPTIONS_ClearAllowedLabel_TextContent": {
+        "description": "TextContent of the label to allow/activate the clear function.",
+        "message": "Funktion \"Leeren\" aktivieren:"
+     },
+     "OPTIONS_NotifyChangeMessage": {
+        "description": "Message that is shown after changing the list (clear, delete, etc.).",
+        "message": "Die Liste wurde verändert, bitte www.save.tv neu aufrufen."
+     },
+     "OPTIONS_NotifyLoadMessage": {
+        "description": "Message that is shown after loading.",
+        "message": "Die Liste wurde erfolgreich geladen, bitte www.save.tv neu aufrufen."
+     }
+}
