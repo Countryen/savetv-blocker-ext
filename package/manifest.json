@@ -3,8 +3,8 @@
 
   "name": "__MSG_GENERAL_Extension_Name__",
   "description": "__MSG_GENERAL_Extension_Description__",
-  "author": "Countryen (C0)",
-  "version": "7.0.2",
+  "author": "Pascal Ried (C0)",
+  "version": "8.0.0",
   "default_locale": "de",
 
   "browser_action": {
